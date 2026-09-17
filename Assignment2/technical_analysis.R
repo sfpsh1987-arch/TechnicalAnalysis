@@ -57,3 +57,10 @@ generate_signal <- function(stock_data) {
   
   return(signal)
 }
+# Function to display stock data
+display_stock_data <- function(stock_name, stock_data) {
+  cat("\n============================\n")
+  cat("Stock:", stock_name, "\n")
+  cat("============================\n")
+  print(head(stock_data))
+}
